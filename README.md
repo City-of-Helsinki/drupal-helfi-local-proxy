@@ -1,6 +1,10 @@
 # Drupal local proxy
 
-@todo
+## Usage
+
+Start: `make up`
+Stop: `make stop`
+Remove containers: `make down`
 
 ## Available sites
 
