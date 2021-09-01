@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  app:
+    hostname: "helfi-proxy.docker.so"
+    container_name: "helfi-reverse-proxy-app"
+    image: "nginx:1.21.0-alpine"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - internal
+      - stonehenge-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.helfi-reverse-proxy-app.entrypoints=https"
+      - "traefik.http.routers.helfi-reverse-proxy-app.rule=Host(`helfi-proxy.docker.so`)"
+      - "traefik.http.routers.helfi-reverse-proxy-app.tls=true"
+      - "traefik.http.services.helfi-reverse-proxy-app.loadbalancer.server.port=8080"
+      - "traefik.docker.network=stonehenge-network"
+networks:
+  internal:
+    external: false
+  stonehenge-network:
+    external: true
