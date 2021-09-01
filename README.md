@@ -2,11 +2,13 @@
 
 ## Usage
 
-Start: `make up`
-Stop: `make stop`
-Remove containers: `make down`
+- Start: `make up`
+- Stop: `make stop`
+- Remove containers: `make down`
 
 ## Available sites
+
+You might have to rebuild and restart your local Docker environment: `docker-compose build` then `make stop && make up`.
 
 ### Terveys
 - [https://helfi-proxy.docker.so/en/social-healthcare](https://helfi-proxy.docker.so/en/social-healthcare)
