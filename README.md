@@ -2,9 +2,9 @@
 
 ## Usage
 
-Start: `make up`
-Stop: `make stop`
-Remove containers: `make down`
+- Start: `make up`
+- Stop: `make stop`
+- Remove containers: `make down`
 
 ## Available sites
 
