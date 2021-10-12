@@ -2,9 +2,9 @@
 
 ## Usage
 
-- Start: `make up`
-- Stop: `make stop`
-- Remove containers: `make down`
+- Start: `./start.sh` or `./start.sh kymp sote hallinto` to only start certain projects.
+- Stop: `docker compose stop`
+- Remove containers: `docker compose down`
 
 ## Available sites
 

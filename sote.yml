@@ -1,0 +1,6 @@
+version: '3.7'
+
+services:
+  app:
+    volumes:
+      - ./locations/sote.locations:/etc/nginx/conf.d/sote.locations:ro

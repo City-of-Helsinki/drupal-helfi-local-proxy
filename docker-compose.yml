@@ -7,9 +7,6 @@ services:
     image: "nginx:1.21.0-alpine"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./locations/hallinto.locations:/etc/nginx/conf.d/hallinto.locations:ro
-      - ./locations/kymp.locations:/etc/nginx/conf.d/kymp.locations:ro
-      - ./locations/sote.locations:/etc/nginx/conf.d/sote.locations:ro
     networks:
       - internal
       - stonehenge-network
