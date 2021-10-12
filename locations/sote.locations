@@ -1,0 +1,36 @@
+location /en/health-and-social-services {
+  proxy_redirect     off;
+  proxy_set_header X-Forwarded-Proto https;
+  proxy_set_header X-Real-IP $remote_addr;
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_pass http://helfi-sote-varnish:6081;
+  proxy_hide_header 'Access-Control-Allow-Origin';
+}
+
+location /fi/sosiaali-ja-terveyspalvelut {
+  proxy_redirect     off;
+  proxy_set_header X-Forwarded-Proto https;
+  proxy_set_header X-Real-IP $remote_addr;
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_pass http://helfi-sote-varnish:6081;
+  proxy_hide_header 'Access-Control-Allow-Origin';
+}
+
+location /sv/social-och-halsovardstjanster {
+  proxy_redirect     off;
+  proxy_set_header X-Forwarded-Proto https;
+  proxy_set_header X-Real-IP $remote_addr;
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_pass http://helfi-sote-varnish:6081;
+  proxy_hide_header 'Access-Control-Allow-Origin';
+}
+
+location /ru/health-and-social-services {
+  proxy_redirect     off;
+  proxy_set_header X-Forwarded-Proto https;
+  proxy_set_header X-Real-IP $remote_addr;
+  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  proxy_pass http://helfi-sote.docker.so:8080;
+  proxy_hide_header 'Access-Control-Allow-Origin';
+}
+
