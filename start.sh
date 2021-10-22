@@ -1,6 +1,6 @@
 #!/bin/bash
 TARGETS=" -f docker-compose.yml"
-DEFAULTS="sote kymp hallinto"
+DEFAULTS="sote kymp hallinto kasko elo"
 
 if [ -n "$1" ]; then
   DEFAULTS="$@"
