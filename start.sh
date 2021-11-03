@@ -14,4 +14,4 @@ do
   fi
 done
 
-docker compose $TARGETS up
+docker compose $TARGETS up -d

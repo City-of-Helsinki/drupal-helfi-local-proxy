@@ -17,7 +17,7 @@ You might have to rebuild and restart your local Docker environment: `docker com
 - [https://helfi-proxy.docker.so/ru/social-and-health](https://helfi-proxy.docker.so/ru/social-and-health)
 
 ### Liikenne
-- [https://helfi-proxy.docker.so/ru/social-and-health](https://helfi-proxy.docker.so/ru/social-and-health)
+- [https://helfi-proxy.docker.so/en/urban-environment-and-traffic](https://helfi-proxy.docker.so/en/urban-environment-and-traffic)
 - [https://helfi-proxy.docker.so/fi/kartat-ja-liikenne](https://helfi-proxy.docker.so/fi/kartat-ja-liikenne)
 - [https://helfi-proxy.docker.so/sv/kartor-och-trafik](https://helfi-proxy.docker.so/sv/kartor-och-trafik)
 - [https://helfi-proxy.docker.so/ru/maps](https://helfi-proxy.docker.so/ru/maps)
