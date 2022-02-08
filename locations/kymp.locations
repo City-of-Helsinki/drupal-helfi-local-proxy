@@ -9,8 +9,6 @@ location /liikenne-assets/ {
 
 location /fi/kaupunkiymparisto-ja-liikenne {
   proxy_redirect     off;
-  proxy_set_header X-Forwarded-Proto https;
-  proxy_set_header X-Real-IP $remote_addr;
   proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
   proxy_pass http://helfi-kymp-varnish:6081;
   proxy_hide_header 'Access-Control-Allow-Origin';
@@ -18,8 +16,6 @@ location /fi/kaupunkiymparisto-ja-liikenne {
 
 location /sv/stadsmiljo-och-trafik {
   proxy_redirect     off;
-  proxy_set_header X-Forwarded-Proto https;
-  proxy_set_header X-Real-IP $remote_addr;
   proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
   proxy_pass http://helfi-kymp-varnish:6081;
   proxy_hide_header 'Access-Control-Allow-Origin';
@@ -27,8 +23,6 @@ location /sv/stadsmiljo-och-trafik {
 
 location /ru/urban-environment-and-traffic {
   proxy_redirect     off;
-  proxy_set_header X-Forwarded-Proto https;
-  proxy_set_header X-Real-IP $remote_addr;
   proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
   proxy_pass http://helfi-kymp-varnish:6081;
   proxy_hide_header 'Access-Control-Allow-Origin';
@@ -36,8 +30,6 @@ location /ru/urban-environment-and-traffic {
 
 location /en/urban-environment-and-traffic {
   proxy_redirect     off;
-  proxy_set_header X-Forwarded-Proto https;
-  proxy_set_header X-Real-IP $remote_addr;
   proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
   proxy_pass http://helfi-kymp-varnish:6081;
   proxy_hide_header 'Access-Control-Allow-Origin';
