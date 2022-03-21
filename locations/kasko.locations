@@ -7,7 +7,7 @@ location /kasko-assets/ {
   proxy_hide_header 'Access-Control-Allow-Origin';
 }
 
-location /en/kasko {
+location /en/childhood-and-education {
   proxy_redirect     off;
   proxy_set_header X-Forwarded-Proto https;
   proxy_set_header X-Real-IP $remote_addr;
@@ -16,7 +16,7 @@ location /en/kasko {
   proxy_hide_header 'Access-Control-Allow-Origin';
 }
 
-location /fi/kasko {
+location /fi/kasvatus-ja-koulutus {
   proxy_redirect     off;
   proxy_set_header X-Forwarded-Proto https;
   proxy_set_header X-Real-IP $remote_addr;
@@ -25,7 +25,7 @@ location /fi/kasko {
   proxy_hide_header 'Access-Control-Allow-Origin';
 }
 
-location /sv/kasko {
+location /sv/fostran-och-utbildning {
   proxy_redirect     off;
   proxy_set_header X-Forwarded-Proto https;
   proxy_set_header X-Real-IP $remote_addr;
@@ -34,7 +34,7 @@ location /sv/kasko {
   proxy_hide_header 'Access-Control-Allow-Origin';
 }
 
-location /ru/kasko {
+location /ru/childhood-and-education {
   proxy_redirect     off;
   proxy_set_header X-Forwarded-Proto https;
   proxy_set_header X-Real-IP $remote_addr;
