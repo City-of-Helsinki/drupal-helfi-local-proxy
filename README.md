@@ -10,6 +10,11 @@
 
 You might have to rebuild and restart your local Docker environment: `docker compose build` then `make stop && make up`.
 
+### Etusivu
+- [https://helfi-proxy.docker.so/en](https://helfi-proxy.docker.so/en)
+- [https://helfi-proxy.docker.so/fi](https://helfi-proxy.docker.so/fi)
+- [https://helfi-proxy.docker.so/sv](https://helfi-proxy.docker.so/sv)
+
 ### Kasvatus koulutus
 - [https://helfi-proxy.docker.so/en/childhood-and-education](https://helfi-proxy.docker.so/en/childhood-and-education)
 - [https://helfi-proxy.docker.so/fi/kasvatus-ja-koulutus](https://helfi-proxy.docker.so/fi/kasvatus-ja-koulutus)
