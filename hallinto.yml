@@ -1,6 +1,0 @@
-version: '3.7'
-
-services:
-  app:
-    volumes:
-      - ./locations/hallinto.locations:/etc/nginx/conf.d/hallinto.locations:ro

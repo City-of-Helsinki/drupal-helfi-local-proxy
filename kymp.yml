@@ -1,6 +1,0 @@
-version: '3.7'
-
-services:
-  app:
-    volumes:
-      - ./locations/kymp.locations:/etc/nginx/conf.d/kymp.locations:ro

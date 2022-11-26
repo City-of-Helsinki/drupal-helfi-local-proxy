@@ -1,6 +1,0 @@
-version: '3.7'
-
-services:
-  app:
-    volumes:
-      - ./locations/elo.locations:/etc/nginx/conf.d/elo.locations:ro

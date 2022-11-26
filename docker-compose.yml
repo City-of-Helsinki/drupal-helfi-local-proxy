@@ -6,9 +6,14 @@ services:
     container_name: "helfi-reverse-proxy-app"
     image: "nginx:1.21.0-alpine"
     volumes:
-      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      #- ./entrypoint.sh:/docker-entrypoint.d/10-entrypoint.sh:ro
+        #- ./certs:/usr/local/share/ca-certificates:ro
+      - ./default.conf.template:/etc/nginx/templates/default.conf.template:ro
+      #- ./default.conf.template:/etc/nginx/conf.d/default.conf:ro
     networks:
       - stonehenge-network
+    env_file:
+      - .env
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.helfi-reverse-proxy-app.entrypoints=https"
@@ -16,6 +21,9 @@ services:
       - "traefik.http.routers.helfi-reverse-proxy-app.tls=true"
       - "traefik.http.services.helfi-reverse-proxy-app.loadbalancer.server.port=8080"
       - "traefik.docker.network=stonehenge-network"
+
+    extra_hosts:
+      - helfi-backend:host-gateway
 networks:
   stonehenge-network:
     external: true
