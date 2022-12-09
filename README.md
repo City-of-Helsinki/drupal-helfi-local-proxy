@@ -28,6 +28,7 @@ location ~ ^/(fi/project|en/project|sv/project|project-assets/) {
   proxy_pass https://helfi-backend:443;
 }
 ```
+- Change `helfi-project.docker.so` to match your project's domain. 
 - `fi/project`, `en/project` and `sv/project` part should match the `prefixes` setting defined in `helfi_proxy` module: [city-of-helsinki/drupal-module-helfi-proxy#site-prefix](https://github.com/City-of-Helsinki/drupal-module-helfi-proxy#site-prefix).
 - `project-assets/` should match the `asset_path` configuration defined in `helfi_proxy` module: [city-of-helsinki/drupal-module-helfi-proxy#asset-path](https://github.com/City-of-Helsinki/drupal-module-helfi-proxy#serve-assets-from-asset-path). The nginx configuration **must** have a trailing slash.
 
