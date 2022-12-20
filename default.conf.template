@@ -12,6 +12,13 @@ server {
     proxy_busy_buffers_size   256k;
     client_max_body_size 32M;
 
+
+    # Avustukset.
+    location ~ ^/(fi/avustukset|sv/bidrags|en/grants|avustukset-assets/) {
+      proxy_set_header Host ${VARNISH_PREFIX}hel-fi-drupal-grant-applications.docker.so;
+      proxy_pass https://helfi-backend:443;
+    }
+
     # Liikenne/KYMP.
     location ~ ^/(fi/kaupunkiymparisto-ja-liikenne|sv/stadsmiljo-och-trafik|en/urban-environment-and-traffic|liikenne-assets/) {
       proxy_set_header Host ${VARNISH_PREFIX}helfi-kymp.docker.so;
