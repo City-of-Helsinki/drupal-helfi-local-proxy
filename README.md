@@ -39,6 +39,11 @@ location ~ ^/(fi/project|en/project|sv/project|project-assets/) {
 - https://helfi-proxy.docker.so/fi/asuminen
 - https://helfi-proxy.docker.so/sv/boende
 
+### Avustukset
+- https://helfi-proxy.docker.so/en/grants
+- https://helfi-proxy.docker.so/fi/avustukset
+- https://helfi-proxy.docker.so/sv/bidrags
+
 ### Etusivu
 - https://helfi-proxy.docker.so/en
 - https://helfi-proxy.docker.so/fi
