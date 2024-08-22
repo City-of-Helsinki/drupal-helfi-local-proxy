@@ -33,7 +33,7 @@ server {
 
     # Strategia/talous.
     location ~ ^/(fi/paatoksenteko-ja-hallinto|sv/beslutsfattande-och-forvaltning|en/decision-making|hallinto-assets/) {
-      proxy_set_header Host ${VARNISH_PREFIX}strategia.docker.so;
+      proxy_set_header Host ${VARNISH_PREFIX}helfi-strategia.docker.so;
       proxy_pass https://helfi-backend:443;
     }
 
